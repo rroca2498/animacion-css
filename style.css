@@ -1,0 +1,72 @@
+.box{
+    border-radius: 6px;
+    height: 40px;
+    width: 80px;
+    margin: 50px auto;
+}
+
+.box-uno{
+
+background-color: aqua;
+
+}
+
+.box-dos{
+
+background-color: brown;
+
+/* transicion se usan dos propiedas o valores i o si, transition-property y transition-duration */
+/*transition-duration: 4s;
+transition-property: all;*/
+transition: all 4s;
+}
+/* Las transformaciones y las tansiciones se combina con pseudoeclases - hover*/
+
+.box:hover{
+    transform: scale(4);
+}
+
+.container-circle div{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+}
+
+.circle1{
+    background-color: darkgreen;
+    /* Curva de velocidad*/
+    transition: all 1.5s linear;
+}
+
+.circle2{
+    background-color: chocolate;
+    transition: all 1.5s ease;
+}
+
+.circle3{
+    background-color: coral;
+    transition: all 1.5s ease-in;
+}
+.circle4{
+    background-color: cornflowerblue;transition: all 1.5s ease-out;
+}
+.circle5{
+    background-color: blue;
+    transition: all 1.5s ease-in-out;
+}
+
+.container-circle:hover .circle1,
+.container-circle:hover .circle2,
+.container-circle:hover .circle3,
+.container-circle:hover .circle4,
+.container-circle:hover .circle5 {
+    transform: translateX(300px);
+}
+
+.square1, .square2{
+    border-radius: 4px;
+    height: 150px;
+    width: 150px;
+    margin: 100px;
+}
