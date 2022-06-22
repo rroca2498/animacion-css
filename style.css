@@ -87,3 +87,82 @@ transition: all 4s;
     transform: translate(20px, 20px);
     background-color: transparent;
 }
+
+/*EStilos para las imagenes*/
+
+.prueba-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo-nuevo, .logo-viejo{
+    width: 500px;
+}
+
+.logo-viejo{
+    position: absolute;
+    transition: all, 1.5s;
+}
+
+.logo-viejo:hover{
+    transform: scale(2);
+    /*hace transparente a la imagen*/
+    opacity: 0;
+}
+
+/*combinado*/
+
+.combinado{
+    background-color: violet;
+    height: 75px;
+    width: 75px;
+    margin: 50px auto;
+    transition: all 2s;
+}
+
+.combinado:hover{
+    transform: rotate(90deg) scale(2);
+}
+
+/*animacion*/
+
+.animacion{
+    width: 120px;
+    height: 120px;
+    margin: 50px auto;
+    background-color: yellow;
+}
+
+/*1- nombre de la animacion
+  2- fotorgrama de la animacion*/
+
+.animacion:hover{
+    /*nombre + duracion + hacerlo infinito */
+    animation: changeColor 4s infinite;
+}
+
+/* @ + agregar el nombre de la animacion a controlar*/
+
+@keyframes changeColor {
+
+    0%{
+        background-color: violet;
+    }
+    
+    15%{
+        border-radius: 50%;
+    }
+
+    25%{
+        width: 400px;
+    }
+
+    50%{
+        background-color: turquoise;
+    }
+
+    100%{
+        border: 2px solid black;
+    }
+}
